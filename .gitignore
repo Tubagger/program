@@ -1,12 +1,25 @@
+# 忽略 Python 缓存
 __pycache__/
+*.py[cod]
 
-data/
-!data/.gitkeep
-logs/
+# 忽略日志文件，但保留 logs 文件夹
+logs/*
 !logs/.gitkeep
+
+# 忽略数据文件，但保留 data 文件夹
+data/*
+!data/.gitkeep
+# 如果你想上传特定类型的文件，比如 CSV 或 JSON，可以添加例外
+!data/**/*.csv
+!data/**/*.json
+
+# 忽略结果文件，但保留 results 文件夹
 results/*
-env/
+!results/.gitkeep
+
+# 虚拟环境文件夹，忽略里面的内容，但保留文件夹
+env/*
 !env/.gitkeep
+
+# 模型或中间产物文件
 *.pt
-*.json
-*.csv
