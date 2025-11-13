@@ -10,8 +10,8 @@ logs/*
 data/*
 !data/README.md
 # 如果你想上传特定类型的文件，比如 CSV 或 JSON，可以添加例外
-!data/**/*.csv
-!data/**/*.json
+# !data/**/*.csv
+# !data/**/*.json
 
 # 忽略结果文件，但保留 results 文件夹
 results/*
