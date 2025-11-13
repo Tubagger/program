@@ -1,9 +1,9 @@
 __pycache__/
 
-data/
-logs/
-results/
-env/
+data/*
+logs/*
+results/*
+env/*
 *.pt
 *.json
 *.csv
