@@ -1,9 +1,12 @@
 __pycache__/
 
-data/*
-logs/*
+data/
+!data/.gitkeep
+logs/
+!logs/.gitkeep
 results/*
-env/*
+env/
+!env/.gitkeep
 *.pt
 *.json
 *.csv
