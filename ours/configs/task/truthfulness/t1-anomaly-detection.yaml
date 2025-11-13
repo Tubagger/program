@@ -1,0 +1,20 @@
+dataset_id: "anomaly-detection"
+model_id: "deepseek-vl2"
+log_file: "./logs/truthfulness/anomaly-detection.json"
+
+generation_kwargs: {
+    'max_new_tokens': 300,
+    'do_sample': False,
+}
+
+evaluator_seq_cfgs: [
+  "rule_chexpert_eval":{  
+    metrics_cfg:{
+      accuracy_score: {},
+      precision_score: {},
+      recall_score: {},
+      f1_score: {},
+    },
+  },    
+]
+
